@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -275,7 +276,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1029530478}
   offset: {x: 0, y: 2, z: -10}
-  smoothSpeed: 0.00725
+  smoothSpeed: 0.03625
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,6 +294,19 @@ MonoBehaviour:
   maxX: 1000
   minY: -16
   maxY: 1000
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eaefa043e571f940a2846d7033cb635, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FPS: 60
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e33147cb9ab7a606afa73af2f0b2d05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeight: 4
+  jumpHeight: 4.2
   timeToJumpApex: 0.4
 --- !u!114 &1029530474
 MonoBehaviour:
