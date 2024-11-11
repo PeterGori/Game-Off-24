@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: -0.0099983215, y: -0.000014663}
-  m_SizeDelta: {x: 13, y: 12}
+  m_AnchoredPosition: {x: -0.010009766, y: -0.000014663}
+  m_SizeDelta: {x: 52, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497351357
 MonoBehaviour:
@@ -559,10 +559,10 @@ RectTransform:
   - {fileID: 497351356}
   m_Father: {fileID: 1756206708}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 52, y: 9}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 150, y: -50}
+  m_SizeDelta: {x: 208, y: 36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &777523397
 MonoBehaviour:
@@ -631,17 +631,17 @@ MonoBehaviour:
   gradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 0.9722566, g: 0.9745695, b: 0, a: 1}
-    key2: {r: 1, g: 0.9832283, b: 0, a: 1}
-    key3: {r: 0.05624906, g: 0.6886792, b: 0, a: 0}
+    key1: {r: 1, g: 0.9832283, b: 0, a: 1}
+    key2: {r: 0.05624906, g: 0.6886792, b: 0, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 31997
-    ctime2: 32768
-    ctime3: 65535
+    ctime0: 21823
+    ctime1: 43646
+    ctime2: 65535
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -654,11 +654,11 @@ MonoBehaviour:
     atime5: 0
     atime6: 0
     atime7: 0
-    m_Mode: 0
+    m_Mode: 1
     m_ColorSpace: -1
-    m_NumColorKeys: 4
+    m_NumColorKeys: 3
     m_NumAlphaKeys: 3
-  fill: {fileID: 0}
+  fill: {fileID: 708976111}
 --- !u!1 &1029530472
 GameObject:
   m_ObjectHideFlags: 0
