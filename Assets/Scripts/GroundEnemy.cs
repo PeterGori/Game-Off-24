@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 [RequireComponent (typeof (Controller2D))]
-public class Player : MonoBehaviour {
+public class GroundEnemy : MonoBehaviour {
 
 	public float maxJumpHeight;
 	public float minJumpHeight;
@@ -13,11 +13,9 @@ public class Player : MonoBehaviour {
 	public float accelerationTimeGrounded;
 	public float moveSpeed;
     public int maxHealth;
-	public int currentHealth;
-	public static int damage = 20;
-	public static float damageModifier = 1;
+	public float currentHealth;
 
-	public PlayerHealthBar healthBar;
+	public EnemyHealthBar healthBar;
 
 	float gravity;
 	float maxJumpVelocity;
@@ -42,16 +40,6 @@ public class Player : MonoBehaviour {
 
 	void Update() 
 	{
-		if (Input.GetKeyDown(KeyCode.E))
-		{
-			TakeDamage(20);
-		}
-		
-		if (Input.GetKeyDown(KeyCode.R))
-		{
-			Heal(20);
-		}
-
 		if (controller.collisions.above || controller.collisions.below) 
 		{
 			velocity.y = 0;
@@ -59,32 +47,20 @@ public class Player : MonoBehaviour {
 
 		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
 
-		if (Input.GetKeyDown (KeyCode.Space) && controller.collisions.below) 
-		{
-			velocity.y = maxJumpVelocity;
-		}
-
-		if (Input.GetKeyUp(KeyCode.Space))
-		{
-			if (velocity.y > minJumpVelocity)
-			{
-				velocity.y = minJumpVelocity;
-			}
-		}
-
 		float targetVelocityX = input.x * moveSpeed;
 		velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
 		velocity.y += gravity * Time.deltaTime;
 		controller.Move (velocity * Time.deltaTime);
 	}
 	
-	public void TakeDamage(int damage)
+	public void TakeDamage(float damage)
 	{
 		currentHealth -= damage;
 		if (currentHealth <= 0)
 		{
 			currentHealth = 0;
 			Debug.Log("Dead!");
+			Die();
 		}
 		healthBar.SetHealth(currentHealth);
 	}
@@ -97,5 +73,10 @@ public class Player : MonoBehaviour {
 			currentHealth = maxHealth;
 		}
 		healthBar.SetHealth(currentHealth);
+	}
+	
+	void Die()
+	{
+		Destroy(gameObject);
 	}
 }
