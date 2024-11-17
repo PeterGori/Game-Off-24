@@ -18,6 +18,8 @@ public class Player : MonoBehaviour {
 	public static float damageModifier = 1;
 	private readonly float coyoteTime = 0.35f;
 	private float coyoteTimeCounter = 0;
+	private readonly float JumpBufferTime = 0.2f;
+	private float JumpBufferCounter = 0;
 
 	public PlayerHealthBar healthBar;
 
@@ -70,9 +72,19 @@ public class Player : MonoBehaviour {
 
 		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
 
-		if (Input.GetKeyDown (KeyCode.Space) && coyoteTimeCounter > 0f) 
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			JumpBufferCounter = JumpBufferTime;
+		}
+		else
+		{
+			JumpBufferCounter -= Time.deltaTime;
+		}
+		
+		if (JumpBufferCounter > 0 && coyoteTimeCounter > 0f) 
 		{
 			velocity.y = maxJumpVelocity;
+			JumpBufferCounter = 0;
 		}
 
 		if (Input.GetKeyUp(KeyCode.Space))
