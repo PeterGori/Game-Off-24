@@ -16,6 +16,8 @@ public class Player : MonoBehaviour {
 	public int currentHealth;
 	public static int damage = 20;
 	public static float damageModifier = 1;
+	private readonly float coyoteTime = 0.35f;
+	private float coyoteTimeCounter = 0;
 
 	public PlayerHealthBar healthBar;
 
@@ -51,6 +53,15 @@ public class Player : MonoBehaviour {
 		{
 			Heal(20);
 		}
+		
+		if (controller.collisions.below)
+		{
+			coyoteTimeCounter = coyoteTime;
+		}
+		else
+		{
+			coyoteTimeCounter -= Time.deltaTime;
+		}
 
 		if (controller.collisions.above || controller.collisions.below) 
 		{
@@ -59,7 +70,7 @@ public class Player : MonoBehaviour {
 
 		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
 
-		if (Input.GetKeyDown (KeyCode.Space) && controller.collisions.below) 
+		if (Input.GetKeyDown (KeyCode.Space) && coyoteTimeCounter > 0f) 
 		{
 			velocity.y = maxJumpVelocity;
 		}
@@ -70,6 +81,17 @@ public class Player : MonoBehaviour {
 			{
 				velocity.y = minJumpVelocity;
 			}
+			coyoteTimeCounter = 0;
+		}
+		
+		// Flip sprite based on direction of travel
+		if (velocity.x > 0)
+		{
+			transform.localScale = new Vector3(1, 1, 1);
+		}
+		else if (velocity.x < 0)
+		{
+			transform.localScale = new Vector3(-1, 1, 1);
 		}
 
 		float targetVelocityX = input.x * moveSpeed;
