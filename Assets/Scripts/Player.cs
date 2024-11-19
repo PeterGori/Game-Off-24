@@ -21,6 +21,8 @@ public class Player : MonoBehaviour {
 	private float coyoteTimeCounter = 0;
 	private readonly float JumpBufferTime = 0.2f;
 	private float JumpBufferCounter = 0;
+	public float worldSwitch_Y_Value;
+	public int goodWorld;  // 1 = goodworld
 
 	public PlayerHealthBar healthBar;
 
@@ -47,6 +49,10 @@ public class Player : MonoBehaviour {
 
 	void Update() 
 	{
+		if (Input.GetKeyDown(KeyCode.LeftAlt))
+		{
+			WorldSwitch();
+		}
 		if (Input.GetKeyDown(KeyCode.E))
 		{
 			TakeDamage(20);
@@ -113,7 +119,26 @@ public class Player : MonoBehaviour {
 		controller.Move (velocity * Time.deltaTime);
 		
 	}
-	
+
+	public void WorldSwitch()
+	{
+		{
+			if (goodWorld == 1)
+			{
+				Vector3 newPosition = transform.position;
+				newPosition.y += worldSwitch_Y_Value;
+				transform.position = newPosition;
+				goodWorld = 0;
+			}
+			else
+			{
+				Vector3 newPosition = transform.position;
+				newPosition.y -= worldSwitch_Y_Value;
+				transform.position = newPosition;
+				goodWorld = 1;
+			}
+		}
+	}
 	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;

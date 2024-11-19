@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 487037898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.7989, y: 205.9926, z: 0.031095665}
+  m_LocalPosition: {x: -27, y: -297.85, z: 0.031095665}
   m_LocalScale: {x: 1.0019, y: 1.0079, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -569,6 +569,8 @@ MonoBehaviour:
   moveSpeed: 7
   maxHealth: 100
   currentHealth: 0
+  worldSwitch_Y_Value: 500
+  goodWorld: 1
   healthBar: {fileID: 24753081}
 --- !u!114 &487037907
 MonoBehaviour:
@@ -1156,7 +1158,7 @@ Transform:
   m_GameObject: {fileID: 1358784586}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -254.6, z: 0}
+  m_LocalPosition: {x: 0, y: -500, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
