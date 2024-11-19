@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Serialization;
@@ -119,7 +120,7 @@ public class Player : MonoBehaviour {
 		if (currentHealth <= 0)
 		{
 			currentHealth = 0;
-			Debug.Log("Dead!");
+			Death();
 		}
 		healthBar.SetHealth(currentHealth);
 	}
@@ -132,5 +133,10 @@ public class Player : MonoBehaviour {
 			currentHealth = maxHealth;
 		}
 		healthBar.SetHealth(currentHealth);
+	}
+	
+	public void Death()
+	{
+		Destroy(GameObject.Find("Player"));
 	}
 }
