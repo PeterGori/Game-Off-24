@@ -120,7 +120,7 @@ public class Player : MonoBehaviour {
 		if (currentHealth <= 0)
 		{
 			currentHealth = 0;
-			Debug.Log("Dead!");
+			Death();
 		}
 		healthBar.SetHealth(currentHealth);
 	}
@@ -137,7 +137,6 @@ public class Player : MonoBehaviour {
 	
 	public void Death()
 	{
-		Destroy(gameObject);
-		Environment.Exit(0);
+		Destroy(GameObject.Find("Player"));
 	}
 }
