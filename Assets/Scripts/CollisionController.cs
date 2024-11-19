@@ -4,6 +4,7 @@ using System.Threading;
 using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.Timeline;
+// ReSharper disable All
 
 public class CollisionController : MonoBehaviour
 {
@@ -14,7 +15,6 @@ public class CollisionController : MonoBehaviour
     public float interpolationPeriod = 1f;
     private float time = 0f;
     public int Damage;
-    [SuppressMessage("ReSharper", "Unity.PerformanceCriticalCodeInvocation")]
     private void Update()
     {
         time += Time.deltaTime;
