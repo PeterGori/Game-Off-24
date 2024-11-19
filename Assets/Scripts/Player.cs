@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Serialization;
@@ -132,5 +133,11 @@ public class Player : MonoBehaviour {
 			currentHealth = maxHealth;
 		}
 		healthBar.SetHealth(currentHealth);
+	}
+	
+	public void Death()
+	{
+		Destroy(gameObject);
+		Environment.Exit(0);
 	}
 }
