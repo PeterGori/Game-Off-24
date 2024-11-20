@@ -122,21 +122,19 @@ public class Player : MonoBehaviour {
 
 	public void WorldSwitch()
 	{
+		if (goodWorld == 1)
 		{
-			if (goodWorld == 1)
-			{
-				Vector3 newPosition = transform.position;
-				newPosition.y += worldSwitch_Y_Value;
-				transform.position = newPosition;
-				goodWorld = 0;
-			}
-			else
-			{
-				Vector3 newPosition = transform.position;
-				newPosition.y -= worldSwitch_Y_Value;
-				transform.position = newPosition;
-				goodWorld = 1;
-			}
+			Vector3 newPosition = transform.position;
+			newPosition.y += worldSwitch_Y_Value;
+			transform.position = newPosition;
+			goodWorld = 0;
+		}
+		else
+		{
+			Vector3 newPosition = transform.position;
+			newPosition.y -= worldSwitch_Y_Value;
+			transform.position = newPosition;
+			goodWorld = 1;
 		}
 	}
 	public void TakeDamage(int damage)

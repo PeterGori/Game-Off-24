@@ -766,6 +766,8 @@ MonoBehaviour:
   target: {fileID: 487037899}
   offset: {x: 0, y: 2, z: -10}
   smoothSpeed: 0.03625
+  Camera_worldSwitch_Y_Value: 500
+  Camera_goodWorld: 1
 --- !u!114 &771675875
 MonoBehaviour:
   m_ObjectHideFlags: 0
