@@ -7,9 +7,9 @@ using UnityEngine.UI;
 [RequireComponent (typeof (Controller2D))]
 public class Player : MonoBehaviour {
 
-	public float maxJumpHeight;
+	public static float maxJumpHeight = 4.2f;
 	public float minJumpHeight;
-	public float timeToJumpApex;
+	public static float timeToJumpApex = 0.4f;
 	public float accelerationTimeAirborne;
 	public float accelerationTimeGrounded;
 	public float moveSpeed;
