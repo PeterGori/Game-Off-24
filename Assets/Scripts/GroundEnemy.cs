@@ -1,56 +1,77 @@
+using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-[RequireComponent (typeof (Controller2D))]
-public class GroundEnemy : MonoBehaviour {
-
-	public float maxJumpHeight;
-	public float minJumpHeight;
-	public float timeToJumpApex;
-	public float accelerationTimeAirborne;
-	public float accelerationTimeGrounded;
+public class GroundEnemy : MonoBehaviour
+{
 	public float moveSpeed;
-    public int maxHealth;
+	public int maxHealth;
 	public float currentHealth;
-
-	public EnemyHealthBar healthBar;
-
-	float gravity;
-	float maxJumpVelocity;
-	float minJumpVelocity;
+	public GameObject leftPoint;
+	public GameObject rightPoint;
 	Vector3 velocity;
-	float velocityXSmoothing;
-
-	Controller2D controller;
-
-	void Start() 
+	private bool isMovingRight = true;
+	
+	public EnemyHealthBar healthBar;
+	void Start()
 	{
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
-		
-		controller = GetComponent<Controller2D> ();
-
-		gravity = -(2 * maxJumpHeight) / Mathf.Pow (timeToJumpApex, 2);
-		maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
-		minJumpVelocity = Mathf.Sqrt (2 * Mathf.Abs (gravity) * minJumpHeight);
-		print ("Gravity: " + gravity + "  Jump Velocity: " + maxJumpVelocity);
 	}
 
-	void Update() 
+	void Update()
 	{
-		if (controller.collisions.above || controller.collisions.below) 
+		if (isMovingRight)
 		{
-			velocity.y = 0;
+			if (Mathf.Abs(rightPoint.transform.position.x - gameObject.transform.position.x) <= 0.5f)
+			{
+				isMovingRight = false;
+			}
+			else
+			{
+				Move("right", moveSpeed);
+			}
 		}
+		else
+		{
+			if (Mathf.Abs(leftPoint.transform.position.x - gameObject.transform.position.x) <= 0.5f)
+			{
+				isMovingRight = true;
+			}
+			else
+			{
+				Move("left", moveSpeed);
+			}
+		}
+	}
 
-		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
-
-		float targetVelocityX = input.x * moveSpeed;
-		velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
-		velocity.y += gravity * Time.deltaTime;
-		controller.Move (velocity * Time.deltaTime);
+	void Move(string direction, float moveSpeed)
+	{
+		if (direction == "left")
+		{
+			transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+			SpriteFlip("left");
+		}
+		else if (direction == "right")
+		{
+			transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+			SpriteFlip("right");
+		}
+	}
+	
+	private void SpriteFlip(string direction)
+	{
+		if (direction == "left")
+		{
+			transform.localScale = new Vector3(-1, 1, 1);
+		}
+		else if (direction == "right")
+		{
+			transform.localScale = new Vector3(1, 1, 1);
+		}
 	}
 	
 	public void TakeDamage(float damage)
@@ -59,23 +80,19 @@ public class GroundEnemy : MonoBehaviour {
 		if (currentHealth <= 0)
 		{
 			currentHealth = 0;
-			Debug.Log("Dead!");
-			Die();
+			Death();
 		}
 		healthBar.SetHealth(currentHealth);
 	}
 	
-	public void Heal (int heal)
+	void OnDrawGizmosSelected()
 	{
-		currentHealth += heal;
-		if (currentHealth > maxHealth)
-		{
-			currentHealth = maxHealth;
-		}
-		healthBar.SetHealth(currentHealth);
+		Gizmos.color = Color.green;
+		Gizmos.DrawWireSphere(leftPoint.transform.position, 0.5f);
+		Gizmos.DrawWireSphere(rightPoint.transform.position, 0.5f);
 	}
-	
-	void Die()
+
+	public void Death()
 	{
 		Destroy(gameObject);
 	}
