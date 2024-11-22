@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections;
 
 public class CameraFollow : MonoBehaviour
 {
@@ -8,12 +9,13 @@ public class CameraFollow : MonoBehaviour
     public float smoothSpeed;
     public float Camera_worldSwitch_Y_Value;
     public int Camera_goodWorld;  // 1 = goodworld
-
+    public bool CameraSwitch_active = false;
+    
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        if (Input.GetKeyDown(KeyCode.LeftAlt) && CameraSwitch_active == false)
         {
-            CameraWorldSwitch();
+            StartCoroutine(CameraWorldSwitchCoroutine());
         }
     }
 
@@ -27,23 +29,28 @@ public class CameraFollow : MonoBehaviour
         }
        
     }
-    public void CameraWorldSwitch()
+
+    public IEnumerator CameraWorldSwitchCoroutine()
     {
+        CameraSwitch_active = true;
+        yield return new WaitForSeconds(0.4f);
+        
+        if (Camera_goodWorld == 1)
         {
-            if (Camera_goodWorld == 1)
-            {
-                Vector3 newPosition = transform.position;
-                newPosition.y += Camera_worldSwitch_Y_Value;
-                transform.position = newPosition;
-                Camera_goodWorld = 0;
-            }
-            else
-            {
-                Vector3 newPosition = transform.position;
-                newPosition.y -= Camera_worldSwitch_Y_Value;
-                transform.position = newPosition;
-                Camera_goodWorld = 1;
-            }
+            Vector3 newPosition = transform.position;
+            newPosition.y += Camera_worldSwitch_Y_Value;
+            transform.position = newPosition;
+            Camera_goodWorld = 0;
         }
+        else if (Camera_goodWorld == 0)
+        {
+            Vector3 newPosition = transform.position;
+            newPosition.y -= Camera_worldSwitch_Y_Value;
+            transform.position = newPosition;
+            Camera_goodWorld = 1;
+        }
+        
+        yield return new WaitForSeconds(1.5f);
+        CameraSwitch_active = false;
     }
 }

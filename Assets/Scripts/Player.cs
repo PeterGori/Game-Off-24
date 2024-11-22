@@ -5,11 +5,11 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 [RequireComponent (typeof (Controller2D))]
-public class Player : MonoBehaviour {
-
-	public float maxJumpHeight;
+public class Player : MonoBehaviour
+{
+	public static float maxJumpHeight = 4.2f;
 	public float minJumpHeight;
-	public float timeToJumpApex;
+	public static float timeToJumpApex = 0.4f;
 	public float accelerationTimeAirborne;
 	public float accelerationTimeGrounded;
 	public float moveSpeed;
@@ -23,6 +23,7 @@ public class Player : MonoBehaviour {
 	private float JumpBufferCounter = 0;
 	public float worldSwitch_Y_Value;
 	public int goodWorld;  // 1 = goodworld
+	public bool PlayerSwitch_active = false;
 
 	public PlayerHealthBar healthBar;
 
@@ -49,9 +50,9 @@ public class Player : MonoBehaviour {
 
 	void Update() 
 	{
-		if (Input.GetKeyDown(KeyCode.LeftAlt))
+		if (Input.GetKeyDown(KeyCode.LeftAlt) && PlayerSwitch_active == false)
 		{
-			WorldSwitch();
+			StartCoroutine(WorldSwitchCoroutine());
 		}
 		if (Input.GetKeyDown(KeyCode.E))
 		{
@@ -120,8 +121,11 @@ public class Player : MonoBehaviour {
 		
 	}
 
-	public void WorldSwitch()
+	public IEnumerator WorldSwitchCoroutine()
 	{
+		PlayerSwitch_active = true;
+		yield return new WaitForSeconds(0.4f);
+		
 		if (goodWorld == 1)
 		{
 			Vector3 newPosition = transform.position;
@@ -129,13 +133,15 @@ public class Player : MonoBehaviour {
 			transform.position = newPosition;
 			goodWorld = 0;
 		}
-		else
+		else if (goodWorld == 0)
 		{
 			Vector3 newPosition = transform.position;
 			newPosition.y -= worldSwitch_Y_Value;
 			transform.position = newPosition;
 			goodWorld = 1;
 		}
+		yield return new WaitForSeconds(1.5f);
+		PlayerSwitch_active = false;
 	}
 	public void TakeDamage(int damage)
 	{
