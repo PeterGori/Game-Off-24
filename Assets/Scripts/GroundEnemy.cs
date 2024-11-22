@@ -1,82 +1,111 @@
+using System;
 using UnityEngine;
 using System.Collections;
+using NUnit.Framework.Internal;
+using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
-[RequireComponent (typeof (Controller2D))]
-public class GroundEnemy : MonoBehaviour {
-
-	public float maxJumpHeight;
-	public float minJumpHeight;
-	public float timeToJumpApex;
-	public float accelerationTimeAirborne;
-	public float accelerationTimeGrounded;
-	public float moveSpeed;
+public class GroundEnemy : MonoBehaviour
+{
+    public float moveSpeed;
     public int maxHealth;
-	public float currentHealth;
+    public float currentHealth;
+    public GameObject leftPoint;
+    public GameObject rightPoint;
+    Vector3 velocity;
+    private bool isMovingRight = true;
 
-	public EnemyHealthBar healthBar;
+    public EnemyHealthBar healthBar;
 
-	float gravity;
-	float maxJumpVelocity;
-	float minJumpVelocity;
-	Vector3 velocity;
-	float velocityXSmoothing;
+    void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
+    }
 
-	Controller2D controller;
+    void Update()
+    {
+        if (isMovingRight)
+        {
+            if (Mathf.Abs(rightPoint.transform.position.x - gameObject.transform.position.x) <= 0.5f)
+            {
+                isMovingRight = false;
+                SpriteFlip("left");
+            }
+            else
+            {
+                Move("right", moveSpeed);
+            }
+        }
+        else
+        {
+            if (Mathf.Abs(leftPoint.transform.position.x - gameObject.transform.position.x) <= 0.5f)
+            {
+                isMovingRight = true;
+                SpriteFlip("right");
+            }
+            else
+            {
+                Move("left", moveSpeed);
+            }
+        }
 
-	void Start() 
-	{
-		currentHealth = maxHealth;
-		healthBar.SetMaxHealth(maxHealth);
-		
-		controller = GetComponent<Controller2D> ();
+        // print(velocity.x);
+        // if (velocity.x > 0)
+        // {
+        //     gameObject.transform.localScale = new Vector3(1, 1, 1);
+        // }
+        // else if (velocity.x < 0)
+        // {
+        //     gameObject.transform.localScale = new Vector3(-1, 1, 1);
+        // }
+    }
 
-		gravity = -(2 * maxJumpHeight) / Mathf.Pow (timeToJumpApex, 2);
-		maxJumpVelocity = Mathf.Abs(gravity) * timeToJumpApex;
-		minJumpVelocity = Mathf.Sqrt (2 * Mathf.Abs (gravity) * minJumpHeight);
-		print ("Gravity: " + gravity + "  Jump Velocity: " + maxJumpVelocity);
-	}
+    void Move(string direction, float moveSpeed)
+    {
+        if (direction == "left")
+        {
+            transform.Translate(Vector2.left * moveSpeed * Time.deltaTime);
+        }
+        else if (direction == "right")
+        {
+            transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+        }
+    }
 
-	void Update() 
-	{
-		if (controller.collisions.above || controller.collisions.below) 
-		{
-			velocity.y = 0;
-		}
+    private void SpriteFlip(string direction)
+    {
+        if (direction == "left")
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else if (direction == "right")
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+    }
 
-		Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
+    public void TakeDamage(float damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            currentHealth = 0;
+            Death();
+        }
+        healthBar.SetHealth(currentHealth);
+    }
 
-		float targetVelocityX = input.x * moveSpeed;
-		velocity.x = Mathf.SmoothDamp (velocity.x, targetVelocityX, ref velocityXSmoothing, (controller.collisions.below)?accelerationTimeGrounded:accelerationTimeAirborne);
-		velocity.y += gravity * Time.deltaTime;
-		controller.Move (velocity * Time.deltaTime);
-	}
-	
-	public void TakeDamage(float damage)
-	{
-		currentHealth -= damage;
-		if (currentHealth <= 0)
-		{
-			currentHealth = 0;
-			Debug.Log("Dead!");
-			Die();
-		}
-		healthBar.SetHealth(currentHealth);
-	}
-	
-	public void Heal (int heal)
-	{
-		currentHealth += heal;
-		if (currentHealth > maxHealth)
-		{
-			currentHealth = maxHealth;
-		}
-		healthBar.SetHealth(currentHealth);
-	}
-	
-	void Die()
-	{
-		Destroy(gameObject);
-	}
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(leftPoint.transform.position, 0.5f);
+        Gizmos.DrawWireSphere(rightPoint.transform.position, 0.5f);
+    }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+    }
 }
