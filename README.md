@@ -9,5 +9,6 @@ Bernie - Art
 Bonnie - Art
 
 Sources
-Brackeys 
+Brackeys
+Sebastian Lague
 opengameart.org/users/buch 
