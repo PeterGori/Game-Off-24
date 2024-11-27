@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2969600729354919089}
   - component: {fileID: 7330120767591158015}
+  - component: {fileID: 9083001385802384714}
   m_Layer: 0
   m_Name: Strength
-  m_TagString: Untagged
+  m_TagString: Strength
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,3 +88,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9083001385802384714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8905131169707896406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5f81dbaa364f841bf77ee12113a6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupPoint: {fileID: 2969600729354919089}
+  pickupRange: 0.1
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  interpolationPeriod: 0.1

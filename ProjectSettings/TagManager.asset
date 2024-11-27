@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Spike
+  - Strength
+  - Speed
+  - Health
   layers:
   - Default
   - TransparentFX

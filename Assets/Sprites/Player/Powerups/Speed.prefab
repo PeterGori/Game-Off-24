@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 72351182466338667}
   - component: {fileID: 4443418963264905243}
+  - component: {fileID: 8089886518151048341}
   m_Layer: 0
   m_Name: Speed
-  m_TagString: Untagged
+  m_TagString: Speed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,3 +88,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8089886518151048341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6978199730835428515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c5f81dbaa364f841bf77ee12113a6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupPoint: {fileID: 72351182466338667}
+  pickupRange: 0.1
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 256
+  interpolationPeriod: 0.1
