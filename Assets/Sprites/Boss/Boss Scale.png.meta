@@ -1,0 +1,1567 @@
+fileFormatVersion: 2
+guid: 1bdd9996b462c60adba5943f1d61f9a1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4183942379265227566
+    second: Boss Scale_0
+  - first:
+      213: 6432451067991029888
+    second: Boss Scale_1
+  - first:
+      213: 9144207799095060752
+    second: Boss Scale_2
+  - first:
+      213: 4544196948113888691
+    second: Boss Scale_3
+  - first:
+      213: 8555760113305370441
+    second: Boss Scale_4
+  - first:
+      213: 8714262527582123051
+    second: Boss Scale_5
+  - first:
+      213: 1477802546539625327
+    second: Boss Scale_6
+  - first:
+      213: 7349070460134676055
+    second: Boss Scale_7
+  - first:
+      213: -4035778734129098350
+    second: Boss Scale_8
+  - first:
+      213: -3946161320457980931
+    second: Boss Scale_9
+  - first:
+      213: -6708711840680914798
+    second: Boss Scale_10
+  - first:
+      213: -8913172594705869926
+    second: Boss Scale_11
+  - first:
+      213: -5712265800062212116
+    second: Boss Scale_12
+  - first:
+      213: 5964695621798510290
+    second: Boss Scale_13
+  - first:
+      213: -1357502890869266433
+    second: Boss Scale_14
+  - first:
+      213: 2878818098543797266
+    second: Boss Scale_15
+  - first:
+      213: 4629820390994849770
+    second: Boss Scale_16
+  - first:
+      213: 1231916322108465820
+    second: Boss Scale_17
+  - first:
+      213: 7499832553738270844
+    second: Boss Scale_18
+  - first:
+      213: 8393473722427576169
+    second: Boss Scale_19
+  - first:
+      213: -6889291164328850048
+    second: Boss Scale_20
+  - first:
+      213: 2139947444265225343
+    second: Boss Scale_21
+  - first:
+      213: -4136346843162871803
+    second: Boss Scale_22
+  - first:
+      213: 5555468151069209872
+    second: Boss Scale_23
+  - first:
+      213: 6526677053740041472
+    second: Boss Scale_24
+  - first:
+      213: -2080701357478135649
+    second: Boss Scale_25
+  - first:
+      213: 156608343127292055
+    second: Boss Scale_26
+  - first:
+      213: 1621744856948274873
+    second: Boss Scale_27
+  - first:
+      213: -6310670047609309612
+    second: Boss Scale_28
+  - first:
+      213: -1791175400244083782
+    second: Boss Scale_29
+  - first:
+      213: -7645433242206951127
+    second: Boss Scale_30
+  - first:
+      213: 1153975503892398053
+    second: Boss Scale_31
+  - first:
+      213: -3229323487109225978
+    second: Boss Scale_32
+  - first:
+      213: -8469948776669985965
+    second: Boss Scale_33
+  - first:
+      213: -6381421442003539895
+    second: Boss Scale_34
+  - first:
+      213: 514569241967341117
+    second: Boss Scale_35
+  - first:
+      213: -7382041878387746995
+    second: Boss Scale_36
+  - first:
+      213: -564494644338892640
+    second: Boss Scale_37
+  - first:
+      213: -6301512310649304327
+    second: Boss Scale_38
+  - first:
+      213: -956675116047325779
+    second: Boss Scale_39
+  - first:
+      213: 6426997711928813164
+    second: Boss Scale_40
+  - first:
+      213: -1134721166404253542
+    second: Boss Scale_41
+  - first:
+      213: -7353793401267684484
+    second: Boss Scale_42
+  - first:
+      213: 8591689277236891816
+    second: Boss Scale_43
+  - first:
+      213: -4795930566828094854
+    second: Boss Scale_44
+  - first:
+      213: -6774216005485750973
+    second: Boss Scale_45
+  - first:
+      213: 4967488989897695580
+    second: Boss Scale_46
+  - first:
+      213: 1665290741057688382
+    second: Boss Scale_47
+  - first:
+      213: -6817933912619415574
+    second: Boss Scale_48
+  - first:
+      213: 659779349904268478
+    second: Boss Scale_49
+  - first:
+      213: -579100329007004167
+    second: Boss Scale_50
+  - first:
+      213: -5878617458299917075
+    second: Boss Scale_51
+  - first:
+      213: -9093652978807340525
+    second: Boss Scale_52
+  - first:
+      213: -7625461972340541166
+    second: Boss Scale_53
+  - first:
+      213: -6595758762531935350
+    second: Boss Scale_54
+  - first:
+      213: -2252777873902050764
+    second: Boss Scale_55
+  - first:
+      213: -7495728062455873361
+    second: Boss Scale_56
+  - first:
+      213: -3489149708378429219
+    second: Boss Scale_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boss Scale_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2559
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b7ecc2d69501a30800000000000000
+      internalID: 4183942379265227566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 2559
+        width: 162
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088ffae6a28a44950800000000000000
+      internalID: 6432451067991029888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 2239
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019ea619b80c6ee70800000000000000
+      internalID: 9144207799095060752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_3
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 2239
+        width: 162
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b51eb15c0b301f30800000000000000
+      internalID: 4544196948113888691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1919
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fb5012e7a2cb670800000000000000
+      internalID: 8555760113305370441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_5
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1919
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24b70449974fe870800000000000000
+      internalID: 8714262527582123051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_6
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1919
+        width: 172
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b79aa1695328410800000000000000
+      internalID: 1477802546539625327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_7
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1919
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 756d4ad75a42df560800000000000000
+      internalID: 7349070460134676055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_8
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1599
+        width: 172
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 291d820bf980ef7c0800000000000000
+      internalID: -4035778734129098350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 1599
+        width: 162
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df337bbcf2b6c39c0800000000000000
+      internalID: -3946161320457980931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_10
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1599
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 290d1cb002ed5e2a0800000000000000
+      internalID: -6708711840680914798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_11
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 1599
+        width: 162
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a935fc6cfbc0e4480800000000000000
+      internalID: -8913172594705869926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_12
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1599
+        width: 172
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7edac0584f9b0b0800000000000000
+      internalID: -5712265800062212116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_13
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 1599
+        width: 162
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2deb0a2d01bd6c250800000000000000
+      internalID: 5964695621798510290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_14
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 1599
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff7eb28205e292de0800000000000000
+      internalID: -1357502890869266433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_15
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 1599
+        width: 162
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2142ba8decd93f720800000000000000
+      internalID: 2878818098543797266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1279
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefab13ad1d604040800000000000000
+      internalID: 4629820390994849770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_17
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1279
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92e7443e55a81110800000000000000
+      internalID: 1231916322108465820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_18
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1279
+        width: 202
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c78fa78c8f1c41860800000000000000
+      internalID: 7499832553738270844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_19
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 1279
+        width: 222
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f0fd841eb9b7470800000000000000
+      internalID: 8393473722427576169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_20
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1279
+        width: 192
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08d01f3ef225460a0800000000000000
+      internalID: -6889291164328850048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_21
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 1279
+        width: 172
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c0f65dcde92bd10800000000000000
+      internalID: 2139947444265225343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_22
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 959
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508f771267eb896c0800000000000000
+      internalID: -4136346843162871803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_23
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 959
+        width: 182
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015f97969dcf81d40800000000000000
+      internalID: 5555468151069209872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_24
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 979
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0054ed7533a639a50800000000000000
+      internalID: 6526677053740041472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_25
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 989
+        width: 182
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98b7dfa32ddf13e0800000000000000
+      internalID: -2080701357478135649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_26
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 989
+        width: 192
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798f6f455726c2200800000000000000
+      internalID: 156608343127292055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_27
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 959
+        width: 192
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6f7b2ea58918610800000000000000
+      internalID: 1621744856948274873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_28
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 959
+        width: 172
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 456bc8de60ffb68a0800000000000000
+      internalID: -6310670047609309612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_29
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 959
+        width: 172
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3880aa6777427e0800000000000000
+      internalID: -1791175400244083782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_30
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 639
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929aa4439f6f5e590800000000000000
+      internalID: -7645433242206951127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_31
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 639
+        width: 182
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef32055b9eb30010800000000000000
+      internalID: 1153975503892398053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_32
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 679
+        width: 162
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602670ee5632f23d0800000000000000
+      internalID: -3229323487109225978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_33
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 849
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 353c4dc9672b47a80800000000000000
+      internalID: -8469948776669985965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_34
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 809
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948615b3203a077a0800000000000000
+      internalID: -6381421442003539895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_35
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 799
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e2ecfcffd142700800000000000000
+      internalID: 514569241967341117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_36
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 789
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4714a9f508bd8990800000000000000
+      internalID: -7382041878387746995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_37
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 779
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0e19e9c138a28f0800000000000000
+      internalID: -564494644338892640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_38
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 769
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa4ff7b0f78c88a0800000000000000
+      internalID: -6301512310649304327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_39
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 679
+        width: 32
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da52b86fc0539b2f0800000000000000
+      internalID: -956675116047325779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_40
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 679
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c66e3c70e58413950800000000000000
+      internalID: 6426997711928813164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_41
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 659
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a988b557c19a040f0800000000000000
+      internalID: -1134721166404253542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_42
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 649
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bf3d51dd312f990800000000000000
+      internalID: -7353793401267684484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_43
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 319
+        width: 162
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0dc3e70efcb3770800000000000000
+      internalID: 8591689277236891816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_44
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 319
+        width: 182
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7a06c43f8e617db0800000000000000
+      internalID: -4795930566828094854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_45
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 319
+        width: 172
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34591413f662df1a0800000000000000
+      internalID: -6774216005485750973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_46
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 0
+        width: 212
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c51248cdae010f440800000000000000
+      internalID: 4967488989897695580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_47
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 0
+        width: 282
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e339d7c1b1d4c1710800000000000000
+      internalID: 1665290741057688382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_48
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 319
+        width: 292
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae70b3cba35d161a0800000000000000
+      internalID: -6817933912619415574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_49
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 319
+        width: 292
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc9e25b2d1082900800000000000000
+      internalID: 659779349904268478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_50
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 319
+        width: 292
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5c938a15f96f7f0800000000000000
+      internalID: -579100329007004167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_51
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 162
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: decaf936194fa6ea0800000000000000
+      internalID: -5878617458299917075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_52
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 172
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3120487cbcadcc180800000000000000
+      internalID: -9093652978807340525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_53
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 0
+        width: 212
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2197462dcbaec2690800000000000000
+      internalID: -7625461972340541166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_54
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 0
+        width: 222
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b2d1fe9582774a0800000000000000
+      internalID: -6595758762531935350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_55
+      rect:
+        serializedVersion: 2
+        x: 1939
+        y: 0
+        width: 212
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432653c95768cb0e0800000000000000
+      internalID: -2252777873902050764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_56
+      rect:
+        serializedVersion: 2
+        x: 2249
+        y: 79
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa004609a03d9f790800000000000000
+      internalID: -7495728062455873361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boss Scale_57
+      rect:
+        serializedVersion: 2
+        x: 2309
+        y: 0
+        width: 162
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd822f793dc049fc0800000000000000
+      internalID: -3489149708378429219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

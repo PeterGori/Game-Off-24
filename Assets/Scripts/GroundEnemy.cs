@@ -5,6 +5,7 @@ using NUnit.Framework.Internal;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class GroundEnemy : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GroundEnemy : MonoBehaviour
     private bool isMovingRight = true;
 
     public EnemyHealthBar healthBar;
+    System.Random rnd = new System.Random();
 
     void Start()
     {
@@ -106,6 +108,10 @@ public class GroundEnemy : MonoBehaviour
 
     public void Death()
     {
+        var position = gameObject.transform;
+        var name = gameObject.name;
         Destroy(gameObject);
+        PowerupSpawning.SpawnPowerup(rnd.Next(1,4), position, name);
+        Debug.Log("step1");
     }
 }
