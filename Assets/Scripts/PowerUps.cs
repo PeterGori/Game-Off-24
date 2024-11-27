@@ -1,4 +1,9 @@
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.Threading;
+using UnityEditor.UI;
 using UnityEngine;
+using UnityEngine.Timeline;
 
 public class PowerUps : MonoBehaviour
 {
@@ -18,7 +23,7 @@ public class PowerUps : MonoBehaviour
         //     }
         // }
         time += Time.deltaTime;
-        if (time >= interpolationPeriod && Vector2.Distance(powerupPoint.position, GameObject.Find("Player").transform.position) < (pickupRange + 0.1))
+        if (time >= interpolationPeriod && Vector2.Distance(powerupPoint.transform.position, GameObject.Find("Player").transform.position) < (pickupRange + 0.5))
         {
             PowerUp();
             time = 0f;
