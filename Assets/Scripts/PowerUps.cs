@@ -23,13 +23,6 @@ public class PowerUps : MonoBehaviour
 
     void Update()
     {
-        // if (gameObject.transform.position.x > GameObject.Find("Player").transform.position.x - 3 && gameObject.transform.position.x < GameObject.Find("Player").transform.position.x + 3)
-        // {
-        //     if (gameObject.transform.position.y > GameObject.Find("Player").transform.position.y - 3 && gameObject.transform.position.y < GameObject.Find("Player").transform.position.y + 3)
-        //     {
-        //         PowerUp();
-        //     }
-        // }
         if (player == null) return;
         time += Time.deltaTime;
         Debug.Log(player.transform.position);
