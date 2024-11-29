@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: tileset_good_inside_7
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 8770522161845631405, guid: 1e8a5cf35ca09e9408e91d5bf0cbf007, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Transform:
     e00: 1
     e01: 0
