@@ -15,10 +15,18 @@ public class CollisionController : MonoBehaviour
     public float interpolationPeriod = 1f;
     private float time = 0f;
     public int Damage;
+    private GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.Find("Player");
+        if (player == null) Debug.Log("null player");
+    }
+
     private void Update()
     {
         time += Time.deltaTime;
-        if (time >= interpolationPeriod && Vector2.Distance(attackPoint.position, GameObject.Find("Player").transform.position) < (attackRange + 0.1))
+        if (time >= interpolationPeriod && Vector2.Distance(attackPoint.position, player.transform.position) < (attackRange + 0.1))
         {
             Attack();
             time = 0f;
