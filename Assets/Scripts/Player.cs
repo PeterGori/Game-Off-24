@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 	public static float timeToJumpApex = 0.4f;
 	public float accelerationTimeAirborne;
 	public float accelerationTimeGrounded;
-	public static float moveSpeed = 7;
+	public static float moveSpeed = 7.5f;
     public int maxHealth;
 	public int currentHealth;
 	public static int damage = 20;
