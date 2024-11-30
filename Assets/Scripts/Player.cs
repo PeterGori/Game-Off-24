@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 
@@ -166,6 +167,6 @@ public class Player : MonoBehaviour
 	
 	public void Death()
 	{
-		Destroy(GameObject.Find("Player"));
+		SceneManager.LoadScene("Main Level");
 	}
 }

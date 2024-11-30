@@ -8,7 +8,7 @@ public class WorldSwitch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.LeftAlt) && worldSwitch_active == false)
+        if(Input.GetKeyDown(KeyCode.G) && worldSwitch_active == false)
         {
             StartCoroutine(WorldSwitchAnimation());
         }
