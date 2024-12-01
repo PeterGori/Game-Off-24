@@ -2296,6 +2296,7 @@ GameObject:
   - component: {fileID: 917367715}
   - component: {fileID: 917367722}
   - component: {fileID: 917367724}
+  - component: {fileID: 917367725}
   m_Layer: 10
   m_Name: TestEnemy
   m_TagString: Player
@@ -2458,6 +2459,28 @@ MonoBehaviour:
     m_Bits: 256
   interpolationPeriod: 1
   Damage: 10
+--- !u!95 &917367725
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917367713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 981f50ee690848f4db8e4a748205e9dc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1029530472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,8 +2586,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.125, y: 1.875}
-    newSize: {x: 1.0625, y: 1.09375}
+    oldSize: {x: 1.125, y: 1.8125}
+    newSize: {x: 0.36, y: 0.58}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -2664,12 +2687,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3713219614965599903, guid: c759cd5727704de47a24668cbe95aea5, type: 3}
+  m_Sprite: {fileID: 735008911615664431, guid: 84278f1720d02f94eb57ba07ccac747b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.0625, y: 1.09375}
+  m_Size: {x: 0.36, y: 0.58}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -2687,8 +2710,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0c882b43c9ae021bca5243c6b45242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   attackPoint: {fileID: 1588198872}
-  attackRange: 3
+  attackRange: 0.8
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -2858,7 +2882,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -4162,7 +4186,7 @@ Transform:
   m_GameObject: {fileID: 1588198871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: -0.05, z: 0}
+  m_LocalPosition: {x: -0.55, y: -0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -52,16 +52,6 @@ public class GroundEnemy : MonoBehaviour
                 Move("left", moveSpeed);
             }
         }
-
-        // print(velocity.x);
-        // if (velocity.x > 0)
-        // {
-        //     gameObject.transform.localScale = new Vector3(1, 1, 1);
-        // }
-        // else if (velocity.x < 0)
-        // {
-        //     gameObject.transform.localScale = new Vector3(-1, 1, 1);
-        // }
     }
 
     void Move(string direction, float moveSpeed)

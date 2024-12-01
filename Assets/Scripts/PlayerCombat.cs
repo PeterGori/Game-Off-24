@@ -3,12 +3,16 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
 
-    // public Animator animator;
-    
+    public Animator animator;
+
     public Transform attackPoint;
     public float attackRange;
     public LayerMask enemyLayers;
-    
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -17,12 +21,10 @@ public class PlayerCombat : MonoBehaviour
             PlayerAttack();
         }
     }
-    
+
     void PlayerAttack()
     {
-        // Play attack animation
-            // TODO - Add Attack animation
-        /*animator.SetTrigger("Attack");*/
+        animator.SetTrigger("Attack");
         // Detect enemies in range of attack
         Collider2D[] HitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
         // Apply damage to enemies
@@ -33,7 +35,7 @@ public class PlayerCombat : MonoBehaviour
         }
         Debug.Log("Player attacked");
     }
-    
+
     void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -41,4 +43,4 @@ public class PlayerCombat : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }
-        
+
