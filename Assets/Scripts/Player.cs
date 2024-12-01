@@ -51,7 +51,7 @@ public class Player : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.LeftAlt) && PlayerSwitch_active == false)
+		if (Input.GetKeyDown(KeyCode.G) && PlayerSwitch_active == false)
 		{
 			StartCoroutine(WorldSwitchCoroutine());
 		}
