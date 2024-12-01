@@ -2962,7 +2962,7 @@ MonoBehaviour:
   minJumpHeight: 0.2
   accelerationTimeAirborne: 0.2
   accelerationTimeGrounded: 0.1
-  maxHealth: 1000
+  maxHealth: 100
   currentHealth: 0
   worldSwitch_Y_Value: 0
   goodWorld: 0
@@ -3152,7 +3152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1029530483}
   attackPoint: {fileID: 1588198872}
-  attackRange: 0.8
+  attackRange: 1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
