@@ -19,6 +19,8 @@ public class Boss : MonoBehaviour
     static System.Random rnd = new System.Random();
     private bool playerInSight = false;
     private int num = rnd.Next(1, 4);
+    private float time = 0f;
+    private float interpolationPeriod = 1f;
 
     void Start()
     {
@@ -28,17 +30,19 @@ public class Boss : MonoBehaviour
 
     void Update()
     {
+        time += Time.deltaTime;
         if(Vector2.Distance(GameObject.Find("Player").transform.position, gameObject.transform.position) < 80)
         {
             playerInSight = true;
         }
         else playerInSight = false;
 
-        if (playerInSight) Attack();
+        if (playerInSight && time > interpolationPeriod) Attack();
     }
 
     private void Attack()
     {
+        time = 0;
         Debug.Log("Attacking Player");
         var choice = num switch
         {

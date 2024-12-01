@@ -3,6 +3,9 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
     public GameObject FireballPrefab;
+
+    private float time = 0f;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,6 +15,12 @@ public class Fireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        time += Time.deltaTime;
+
+        if (time > 5)
+        {
+            Destroy(gameObject);
+        }
         if (Vector2.Distance(gameObject.transform.position, GameObject.Find("Boss").transform.position) > 80)
         {
             Destroy(gameObject);
