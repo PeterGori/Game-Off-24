@@ -6,6 +6,7 @@ using System.Collections;
 using NUnit.Framework.Internal;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -31,7 +32,7 @@ public class Boss : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
-        if(Vector2.Distance(GameObject.Find("Player").transform.position, gameObject.transform.position) < 80)
+        if (Vector2.Distance(GameObject.Find("Player").transform.position, gameObject.transform.position) < 80)
         {
             playerInSight = true;
         }
@@ -67,7 +68,7 @@ public class Boss : MonoBehaviour
         Instantiate(GameObject.Find("Boss").GetComponent<FireballSpawner>().FireballPrefab, GameObject.Find("Boss").transform.position, GameObject.Find("Boss").transform.rotation);
         return 0;
     }
-    
+
     int FireballSpread()
     {
         Instantiate(GameObject.Find("Boss").GetComponent<FireballSpawner>().FireballPrefab, GameObject.Find("Boss").transform.position, Quaternion.Euler(0, 0, 10));
@@ -76,7 +77,7 @@ public class Boss : MonoBehaviour
 
         return 0;
     }
-    
+
     int Nothing()
     {
         return 0;
@@ -84,6 +85,6 @@ public class Boss : MonoBehaviour
 
     public void Death()
     {
-        Destroy(gameObject);
+        SceneManager.LoadScene("Winning");
     }
 }

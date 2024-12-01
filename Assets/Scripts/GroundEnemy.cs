@@ -33,7 +33,7 @@ public class GroundEnemy : MonoBehaviour
             if (Mathf.Abs(rightPoint.transform.position.x - gameObject.transform.position.x) <= 0.5f)
             {
                 isMovingRight = false;
-                SpriteFlip("left");
+                if (gameObject.name != "Boss") SpriteFlip("left");
             }
             else
             {
@@ -45,7 +45,8 @@ public class GroundEnemy : MonoBehaviour
             if (Mathf.Abs(leftPoint.transform.position.x - gameObject.transform.position.x) <= 0.5f)
             {
                 isMovingRight = true;
-                SpriteFlip("right");
+                if (gameObject.name != "Boss") SpriteFlip("right");
+
             }
             else
             {
@@ -101,7 +102,7 @@ public class GroundEnemy : MonoBehaviour
         var position = gameObject.transform;
         var name = gameObject.name;
         Destroy(gameObject);
-        PowerupSpawning.SpawnPowerup(rnd.Next(1,4), position, name);
+        PowerupSpawning.SpawnPowerup(rnd.Next(1, 4), position, name);
         Debug.Log("step1");
     }
 }
