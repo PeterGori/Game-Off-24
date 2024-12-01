@@ -13,7 +13,7 @@ public class CameraFollow : MonoBehaviour
     
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftAlt) && CameraSwitch_active == false)
+        if (Input.GetKeyDown(KeyCode.G) && CameraSwitch_active == false)
         {
             StartCoroutine(CameraWorldSwitchCoroutine());
         }
