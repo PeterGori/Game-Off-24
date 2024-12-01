@@ -20,7 +20,7 @@ public class Boss : MonoBehaviour
     private bool playerInSight = false;
     private int num = rnd.Next(1, 4);
     private float time = 0f;
-    private float interpolationPeriod = 1f;
+    private float interpolationPeriod = 2f;
 
     void Start()
     {
@@ -64,15 +64,15 @@ public class Boss : MonoBehaviour
 
     int Fireball()
     {
-        Instantiate(GameObject.Find("Boss").GetComponent<Fireball>().FireballPrefab, GameObject.Find("Boss").transform.position, GameObject.Find("Boss").transform.rotation);
+        Instantiate(GameObject.Find("Boss").GetComponent<FireballSpawner>().FireballPrefab, GameObject.Find("Boss").transform.position, GameObject.Find("Boss").transform.rotation);
         return 0;
     }
     
     int FireballSpread()
     {
-        Instantiate(GameObject.Find("Boss").GetComponent<Fireball>().FireballPrefab, GameObject.Find("Boss").transform.position, Quaternion.Euler(0, 0, 10));
-        Instantiate(GameObject.Find("Boss").GetComponent<Fireball>().FireballPrefab, GameObject.Find("Boss").transform.position, GameObject.Find("Boss").transform.rotation);
-        Instantiate(GameObject.Find("Boss").GetComponent<Fireball>().FireballPrefab, GameObject.Find("Boss").transform.position, Quaternion.Euler(0, 0, -10));
+        Instantiate(GameObject.Find("Boss").GetComponent<FireballSpawner>().FireballPrefab, GameObject.Find("Boss").transform.position, Quaternion.Euler(0, 0, 10));
+        Instantiate(GameObject.Find("Boss").GetComponent<FireballSpawner>().FireballPrefab, GameObject.Find("Boss").transform.position, GameObject.Find("Boss").transform.rotation);
+        Instantiate(GameObject.Find("Boss").GetComponent<FireballSpawner>().FireballPrefab, GameObject.Find("Boss").transform.position, Quaternion.Euler(0, 0, -10));
 
         return 0;
     }

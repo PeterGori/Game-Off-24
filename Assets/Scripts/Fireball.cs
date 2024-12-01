@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Fireball : MonoBehaviour
 {
-    public GameObject FireballPrefab;
+    
 
     private float time = 0f;
     

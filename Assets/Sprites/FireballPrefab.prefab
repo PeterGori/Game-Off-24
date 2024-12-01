@@ -252,7 +252,7 @@ MonoBehaviour:
   height: 2
   canMove: 1
   maxSpeed: 1
-  gravity: {x: NaN, y: NaN, z: NaN}
+  gravity: {x: 0, y: -2, z: 0}
   groundMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -289,4 +289,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba41dba010e4d86ab8099aa943a12574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireballPrefab: {fileID: 0}
