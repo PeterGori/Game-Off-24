@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CrazyGuy_11
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -880848883, guid: 4bc1b44ee208e624aab5e82f27ca1fad, type: 3}
-  m_Color: {r: 0.54901963, g: 0.54901963, b: 0.54901963, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0
