@@ -25,6 +25,7 @@ public class Player : MonoBehaviour
 	public float worldSwitch_Y_Value;
 	public int goodWorld;  // 1 = goodworld
 	public bool PlayerSwitch_active = false;
+	Vector3 SpawnPoint = new Vector3(-135.926f,-297.077f , 0.03109566f);
 
 	public PlayerHealthBar healthBar;
 
@@ -165,8 +166,11 @@ public class Player : MonoBehaviour
 		healthBar.SetHealth(currentHealth);
 	}
 
-	public void Death()
+	private void Death()
 	{
-		SceneManager.LoadScene("Main Level");
+		gameObject.transform.position = SpawnPoint;
+		Camera.main.transform.position = new Vector3(-135.926f, -297.077f, -10);
+		Heal(maxHealth);
+		
 	}
 }
